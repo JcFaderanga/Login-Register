@@ -2,7 +2,7 @@
 .content{
     width: 100%;
     height: 100%;
-    background: rgba( 255, 255, 255, 0.25 );
+    background: rgba( 255, 255, 255, 0.5 );
     backdrop-filter: blur( 2px );
     position: absolute;
     display: flex;
@@ -21,7 +21,7 @@
     padding:0 50px 10px 50px;
     position: absolute;
     border: 1px solid rgba(0,0,0, 0.2);
-    backdrop-filter: blur( 2px );
+    backdrop-filter: blur( 20px );
     }  
 
     .form-container.active-width{
@@ -30,7 +30,7 @@
         max-height: 510px;
         height: 100%;
         overflow: hidden;
-   -webkit-animation: registerWidth 3s ease ;
+   -webkit-animation: registerWidth 2s ease ;
    }
    @-webkit-keyframes registerWidth{
 
@@ -60,7 +60,7 @@
         max-height: 510px;
         height: 400px;
         overflow: hidden;
-   -webkit-animation: login 3s ease ;
+   -webkit-animation: login 2s ease ;
    }
    @-webkit-keyframes login{
 
@@ -101,35 +101,6 @@
     font-size: 30px;
     font-weight: 300;
 }
-#title.active{
--webkit-animation: label 3s cubic-bezier(0.24, 0.28, 0.49, 1.13);
-}
-    @-webkit-keyframes label{
-        0%{
-            transform: translateY(0);
-        }
-        50%{
-             transform: translateY(-100px);
-        }
-        100%{
-             transform: translateY(0);
-        }
-    }
-    #title.deactive{
--webkit-animation: labelRemove 3s cubic-bezier(0.24, 0.28, 0.49, 1.13);
-}
-    @-webkit-keyframes labelRemove{
-        0%{
-            transform: translateY(0);
-        }
-        50%{
-             transform: translateY(-100px);
-        }
-        100%{
-             transform: translateY(0);
-        }
-    }
-
     fieldset {
 	border: 1px solid rgba(0,0,0);
 	border-radius: 10px;
