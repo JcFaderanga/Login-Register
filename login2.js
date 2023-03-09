@@ -6,7 +6,7 @@ form.forEach (swtich => {
        setTimeout(function (){
          document.getElementById('login').style.display = "none";
          document.getElementById('register').style.display = "block";
-       },900);
+       },700);
        document.querySelector('.form-container').classList.remove('remove');
        document.querySelector('.form-container').classList.add('active-width');
        setTimeout(function (){
@@ -18,7 +18,7 @@ form.forEach (swtich => {
           document.getElementById('login').style.display = "block";
 	        document.getElementById('register').style.display = "none";
           document.getElementById('title').innerHTML = "LOGIN";
-       	},900);
+       	},700);
        document.querySelector('.form-container').classList.remove('active-width');
        document.querySelector('.form-container').classList.add('remove');
       return clicked = true;
